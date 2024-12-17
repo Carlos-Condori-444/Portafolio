@@ -9,6 +9,7 @@ import { ScrollUp } from './components/scrollup/ScrollUp'
 import { Services } from './components/services/Services'
 import { Skills } from './components/skills/Skills'
 import { Testimonial } from './components/testimonial/Testimonial'
+import { Work } from './components/work/Work'
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <Skills/>
         <Services/>
         <Qualification/>
+        <Work/> {/* Nuevo */}
         <Testimonial/>
         <Contact/>
       </main>
