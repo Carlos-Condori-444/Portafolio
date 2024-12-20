@@ -2,6 +2,7 @@
     grid-template-columns: repeat(2, 350px); /* Dos columnas con ancho fijo */
     column-gap: 3rem; /* Espacio horizontal entre columnas */
     justify-content: center; /* Centra las columnas en el contenedor */
+    flex: auto;
 }
 
 .skills__content {
@@ -10,6 +11,7 @@
     padding: 2rem 4rem;
     border-radius: 1.25rem;
 }
+
 
 .skills__title {
     font-size: var(--normal-font-size);

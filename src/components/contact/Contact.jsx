@@ -9,28 +9,31 @@ export const Contact = () => {
     e.preventDefault();
 
     emailjs
-        .sendForm('service_0rgxm4a', 'template_2r9r8jh', form.current, {
-        publicKey: 'bu59zVKym-QOV3dFJ',
-        })
+        .sendForm(
+            import.meta.env.VITE_EMAILJS_SERVICE_ID,
+            import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+            form.current,
+            import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+        )
         .then(
-        () => {
-            console.log('SUCCESS!');
-            e.target.reset()
-        },
-        (error) => {
-            console.log('FAILED...', error.text);
-        },
+            () => {
+                console.log('SUCCESS!');
+                e.target.reset();
+            },
+            (error) => {
+                console.log('FAILED...', error.text);
+            }
         );
-        
+    
     };
     return (
-        <section className="contact section">
-            <h2 className="section__title">Get in touch</h2>
-            <span className="section__subtitle">Contact Me</span>
+        <section className="contact section" id='contact'>
+            <h2 className="section__title">Ponte en contacto</h2>
+            <span className="section__subtitle">Contáctame</span>
 
             <div className="contact__container container grid">
                 <div className="contact__content">
-                    <h3 className="contact__title">Talk to me</h3>
+                    <h3 className="contact__title">Háblame</h3>
 
                     <div className="contact__info">
                         {/* CARDS */}
@@ -38,49 +41,49 @@ export const Contact = () => {
                             <i className="bx bx-mail-send contact__card-icon"></i>
 
                             <h3 className="contact__card-title">Email</h3>
-                            <span className="contact__card-data">user@gmail.com</span>
-                            <a href="mailto:examplemail@gmail.com.com" className="contact__button">Write me <i className="bx bx-right-arrow-alt contact__button-icon"></i></a>
+                            <span className="contact__card-data">carlos.condori.cho@gmail.com</span>
+                            <a href="mailto:carlos.condori.cho@gmail.com" className="contact__button">Escríbeme <i className="bx bx-right-arrow-alt contact__button-icon"></i></a>
                         </div>
 
                         <div className="contact__card">
-                            <i className="bx bxl-whatsapp contact__card-icon"></i>
+                            <i className="uil uil-github-alt contact__card-icon"></i>
 
-                            <h3 className="contact__card-title">Whatsapp</h3>
-                            <span className="contact__card-data">999-888-777</span>
-                            <a href="https://api.whatsapp.com/send?phone=62214408789&text=Hello, more information!" className="contact__button">Write me <i className="bx bx-right-arrow-alt contact__button-icon"></i></a>
+                            <h3 className="contact__card-title">Github</h3>
+                            <span className="contact__card-data">Carlos-Condori-444</span>
+                            <a href="https://github.com/Carlos-Condori-444" className="contact__button">Escríbeme <i className="bx bx-right-arrow-alt contact__button-icon"></i></a>
                         </div>
 
                         <div className="contact__card">
-                            <i className="bx bxl-messenger contact__card-icon"></i>
+                            <i className="uil uil-linkedin contact__card-icon"></i>
 
-                            <h3 className="contact__card-title">Messenger</h3>
-                            <span className="contact__card-data">user.fb123</span>
-                            <a href="https://m.me/crypticalcoder" className="contact__button">Write me <i className="bx bx-right-arrow-alt contact__button-icon"></i></a>
+                            <h3 className="contact__card-title">Linkedin</h3>
+                            <span className="contact__card-data">Carlos Manuel Condori Choquehuayta</span>
+                            <a href="https://www.linkedin.com/in/carlos-manuel-condori-choquehuayta" className="contact__button">Write me <i className="bx bx-right-arrow-alt contact__button-icon"></i></a>
                         </div>
                     </div>
 
                 </div>
 
                 <div className="contact__content">
-                    <h3 className="contact__title">Write me your project</h3>
+                    <h3 className="contact__title">Escríbeme tu proyecto</h3>
                     <form className="contact__form" ref={form} onSubmit={sendEmail}> 
                         <div className="contact__form-div">
-                            <label htmlFor="" className="contact__form-tag">Name</label>
-                            <input type="text" name="name" className="contact__form-input" placeholder="Insert your name" />
+                            <label htmlFor="" className="contact__form-tag">Nombre</label>
+                            <input type="text" name="name" className="contact__form-input" placeholder="Inserta tu nombre" />
                         </div>
 
                         <div className="contact__form-div">
                             <label htmlFor="" className="contact__form-tag">Mail</label>
-                            <input type="email" name="email" className="contact__form-input" placeholder="Insert your email" />
+                            <input type="email" name="email" className="contact__form-input" placeholder="Inserta tu email" />
                         </div>
 
                         <div className="contact__form-div contact__form-area">
-                            <label htmlFor="" className="contact__form-tag">Project</label>
-                            <textarea  name="project" cols="30" rows="10" className="contact__form-input" placeholder="Write your project" ></textarea>
+                            <label htmlFor="" className="contact__form-tag">Proyecto</label>
+                            <textarea  name="project" cols="30" rows="10" className="contact__form-input" placeholder="Inserta tu project" ></textarea>
                         </div>
 
                         <button href="#contact" className="button button--flex">
-                        Send Message
+                        Enviar mensaje
                             <svg
                             className="button__icon"
                             xmlns="http://www.w3.org/2000/svg"

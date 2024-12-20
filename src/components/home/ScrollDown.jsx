@@ -37,7 +37,7 @@ export const ScrollDown = () => {
                 }}
             ></path>
             </svg>
-            <spam className="home__scroll-name">Scroll Down</spam>
+            <spam className="home__scroll-name">Desplazarse hacia abajo</spam>
             <i className="ul uil-arrow-down home__scroll-arrow"></i>
         </a>
         </div>

@@ -1,13 +1,13 @@
 import "./about.css";
-import AboutImg from "../../assets/about.jpg";
-import CV from "../../assets/John-Cv.pdf";
+import AboutImg from "../../assets/LOGO.png";
+import CV from "../../assets/CV-Carlos_Condori-2024.pdf";
 import { Info } from "./Info";
 
 export const About = () => {
     return (
         <section className="about section" id="about">
-            <h2 className="section__title">About Me</h2>
-            <span className="section__subtitle">My introduction</span>
+            <h2 className="section__title">Acerca de mí</h2>
+            <span className="section__subtitle">Mi introducción</span>
         
             <div className="about__container container grid">
                 <img src={AboutImg} alt="" className="about__img" />
@@ -15,9 +15,9 @@ export const About = () => {
                 <div className="about__data">
                     <Info/>
 
-                    <p className="about__description">Frontend developer, I create web pages with UI / UX user interface, I have years of experience and many clients are happy with the projects carried out.</p>
+                    <p className="about__description">Desarrollador de software egresado de Tecsup, apasionado por enfrentar nuevos desafíos y aportar soluciones efectivas en proyectos dinámicos. Mi objetivo es seguir aprendiendo y creciendo en el mundo de la tecnología.</p>
 
-                    <a download="" href={CV} className="button button--flex">Download CV
+                    <a download="" href={CV} className="button button--flex">Descargar CV
                     <svg
                 className="button__icon"
                 xmlns="http://www.w3.org/2000/svg"

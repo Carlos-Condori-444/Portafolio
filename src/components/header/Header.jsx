@@ -16,7 +16,7 @@ export const Header = () => {
     <header className="header">
       <nav className="nav container">
         <a href="index.html" className="nav__logo">
-          Smith
+          Carlos Condori
         </a>
 
         <div className={Toggle ? "nav__menu show-menu" : "nav__menu"}>
@@ -30,7 +30,7 @@ export const Header = () => {
                   activeNav === "#home" ? "nav__link active-link" : "nav__link "
                 }
               >
-                <i className="uil uil-estate nav__icon"></i> Home
+                <i className="uil uil-estate nav__icon"></i> Inicio
               </a>
             </li>
 
@@ -41,7 +41,7 @@ export const Header = () => {
                     activeNav === "#about" ? "nav__link active-link" : "nav__link "
                 }
               >
-                <i className="uil uil-user nav__icon"></i> About
+                <i className="uil uil-user nav__icon"></i> Acerca de mí
               </a>
             </li>
 
@@ -63,11 +63,11 @@ export const Header = () => {
                     activeNav === "#services" ? "nav__link active-link" : "nav__link "
                 }
               >
-                <i className="uil uil-briefcase-alt nav__icon"></i> Services
+                <i className="uil uil-briefcase-alt nav__icon"></i> Servicios
               </a>
             </li>
 
-            <li className="nav__item">
+            {/* <li className="nav__item">
               <a href="#portfolio" 
                 onClick={() => setActiveNav("#portfolio")}
                 className={
@@ -76,7 +76,7 @@ export const Header = () => {
               >
                 <i className="uil uil-scenery nav__icon"></i> Portfolio
               </a>
-            </li>
+            </li> */}
 
             <li className="nav__item">
               <a href="#contact" 
@@ -85,7 +85,7 @@ export const Header = () => {
                     activeNav === "#contact" ? "nav__link active-link" : "nav__link "
                 }    
               >
-                <i className="uil uil-message nav__icon"></i> Contact
+                <i className="uil uil-message nav__icon"></i> Contacto
               </a>
             </li>
           </ul>

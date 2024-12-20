@@ -3,7 +3,7 @@ export const Data = () => {
     return (
         <div className="home__data">
             <h1 className="home__title">
-                John Smith
+                Carlos C. 
                 <svg
                   width="36"
                   height="36"
@@ -54,11 +54,11 @@ export const Data = () => {
                   ></path>
                 </svg>
             </h1>
-            <h3 className="home__subtitle">Visual Designer</h3>
-            <p className="home__description">I'm creative designer based in New York, and I'm very passionate and dedicated to my work.</p>
+            <h3 className="home__subtitle">Full Stack Developer</h3>
+            <p className="home__description">Soy desarrollador Full Stack en Lima, apasionado y dedicado a crear soluciones innovadoras con tecnologías modernas.</p>
 
             <a href="#contact" className="button button--flex">
-                Say Hello
+                Contáctame
                 <svg
                   className="button__icon"
                   xmlns="http://www.w3.org/2000/svg"
